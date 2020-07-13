@@ -1,0 +1,8 @@
+cmake-*
+build
+*-build
+*_build
+.idea
+bazel*
+dist
+.vscode
