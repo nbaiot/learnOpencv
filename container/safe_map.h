@@ -2,8 +2,8 @@
 // Created by nbaiot@126.com on 2020/6/5.
 //
 
-#ifndef FIGHTER_MIC_SERVER_SAFE_MAP_H
-#define FIGHTER_MIC_SERVER_SAFE_MAP_H
+#ifndef NBAIOT_SAFE_MAP_H
+#define NBAIOT_SAFE_MAP_H
 
 #include <map>
 #include <memory>
@@ -89,4 +89,4 @@ private:
 
 }
 
-#endif //FIGHTER_MIC_SERVER_SAFE_MAP_H
+#endif //NBAIOT_SAFE_MAP_H

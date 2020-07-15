@@ -47,12 +47,11 @@ set(FF_LIB ${FFMPEG_LIBS} ${FFMPEG_DEP_LIBS})
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-
 if (CUDA_FOUND)
     add_definitions(-DUSE_GPU)
 endif ()
 
-set(COMMON_DEPS glog boost_system boost_timer boost_chrono boost_thread boost_filesystem libyuv)
+set(COMMON_DEPS glog boost_system boost_timer boost_chrono boost_thread boost_filesystem libyuv jpeg-turbo)
 
 set(COMMON_LIBS ${OpenCV_LIBS} ${COMMON_DEPS} pthread)
 

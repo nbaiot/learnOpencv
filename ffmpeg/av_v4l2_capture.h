@@ -11,29 +11,23 @@
 
 namespace nbaiot {
 
-class AVDemuxer;
-
 class AVVideoFrameInterface;
-
-class InputVideoStream;
 
 using OnV4l2FrameCallback = std::function<void(const std::shared_ptr<AVVideoFrameInterface>&)>;
 
 using OnV4l2DisconnectErrorCallback = std::function<void(const std::string&)>;
 
+class AVV4l2CaptureImpl;
+
 class AVV4l2Capture {
 
 public:
-  enum Mode {
-    kJpeg,
-    kRaw,
-  };
 
   AVV4l2Capture();
 
   ~AVV4l2Capture();
 
-  bool Open(const std::string& device, int w, int h, Mode mode = kJpeg);
+  bool Open(const std::string& device, int w, int h);
 
   void Close();
 
@@ -52,11 +46,7 @@ public:
   void SetDisconnectedErrorCallback(OnV4l2DisconnectErrorCallback callback);
 
 private:
-  std::string device_;
-  std::unique_ptr<AVDemuxer> demuxer_;
-  std::shared_ptr<InputVideoStream> video_stream_;
-  OnV4l2FrameCallback frame_callback_;
-  OnV4l2DisconnectErrorCallback disconnect_callback_;
+  std::unique_ptr<AVV4l2CaptureImpl> impl_;
 
 };
 
