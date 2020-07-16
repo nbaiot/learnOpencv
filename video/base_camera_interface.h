@@ -2,8 +2,8 @@
 // Created by nbaiot@126.com on 2020/7/14.
 //
 
-#ifndef LEARN_OPENCV_BASE_CAMERA_INTERFACE_H
-#define LEARN_OPENCV_BASE_CAMERA_INTERFACE_H
+#ifndef NBAIOT_BASE_CAMERA_INTERFACE_H
+#define NBAIOT_BASE_CAMERA_INTERFACE_H
 
 #include <string>
 #include <memory>
@@ -31,4 +31,4 @@ public:
 
 }
 
-#endif //LEARN_OPENCV_BASE_CAMERA_INTERFACE_H
+#endif //NBAIOT_BASE_CAMERA_INTERFACE_H

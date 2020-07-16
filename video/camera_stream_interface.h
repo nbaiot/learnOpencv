@@ -2,8 +2,8 @@
 // Created by nbaiot@126.com on 2020/7/14.
 //
 
-#ifndef LEARN_OPENCV_CAMERA_STREAM_INTERFACE_H
-#define LEARN_OPENCV_CAMERA_STREAM_INTERFACE_H
+#ifndef NBAIOT_CAMERA_STREAM_INTERFACE_H
+#define NBAIOT_CAMERA_STREAM_INTERFACE_H
 
 #include <memory>
 #include <ffmpeg/av_defines.h>
@@ -34,4 +34,4 @@ public:
 
 }
 
-#endif //LEARN_OPENCV_CAMERA_STREAM_INTERFACE_H
+#endif //NBAIOT_CAMERA_STREAM_INTERFACE_H

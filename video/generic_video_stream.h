@@ -2,8 +2,8 @@
 // Created by nbaiot@126.com on 2020/7/15.
 //
 
-#ifndef LEARN_OPENCV_GENERIC_VIDEO_STREAM_H
-#define LEARN_OPENCV_GENERIC_VIDEO_STREAM_H
+#ifndef NBAIOT_GENERIC_VIDEO_STREAM_H
+#define NBAIOT_GENERIC_VIDEO_STREAM_H
 
 #include "camera_stream_interface.h"
 
@@ -48,4 +48,4 @@ private:
 }
 
 
-#endif //LEARN_OPENCV_GENERIC_VIDEO_STREAM_H
+#endif //NBAIOT_GENERIC_VIDEO_STREAM_H
