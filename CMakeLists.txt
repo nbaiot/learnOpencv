@@ -49,8 +49,8 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 if (CUDA_FOUND)
     add_definitions(-DUSE_GPU)
-    add_definitions(-DHAVE_CUDA=1)
 endif ()
+
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-function")
 
 set(COMMON_DEPS glog boost_system boost_timer boost_chrono boost_thread boost_filesystem libyuv jpeg-turbo)
@@ -60,7 +60,7 @@ set(COMMON_LIBS ${OpenCV_LIBS} ${COMMON_DEPS} pthread)
 set(QT_LIB  Qt5::Gui Qt5::Widgets Qt5::Qml Qt5::Quick Qt5::Multimedia Qt5::MultimediaWidgets)
 
 include(cmake/qt5.cmake)
-message(">>>>>>>>>>>>>>>>>>>>>>>>${OpenCV_LIBS}")
+
 aux_source_directory(utils COMMON_UTILS)
 
 add_subdirectory(ffmpeg)
@@ -68,3 +68,4 @@ add_subdirectory(video)
 add_subdirectory(hello_opencv)
 add_subdirectory(face_detect)
 add_subdirectory(object_detect)
+add_subdirectory(open_pose)
